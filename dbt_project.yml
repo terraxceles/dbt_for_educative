@@ -36,3 +36,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+    exercise:
+      +schema: EDUCATIVE
+      +database: BI_DWH
+      +snowflake_warehouse: "{{ target.name }}_bi_wh_s"
